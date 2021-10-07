@@ -3,7 +3,7 @@ const inputRef = document.getElementById('search-box');
 
 export default  function fetchCountries(name) {
    
-       return fetch(`https://restcountries.eu/rest/v2/name/${name}`)
+       return fetch(`https://restcountries.com/rest/v2/name/${name}`)
            .then(response => {
                if (!response.ok) {
                    throw new Error('Error')
